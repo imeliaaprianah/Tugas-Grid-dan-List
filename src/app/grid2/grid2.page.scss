@@ -1,0 +1,11 @@
+.custom-button {
+  border-radius: 10px; /* Mengatur sudut tombol */
+  padding: 10px 20px; /* Mengatur padding tombol */
+  font-weight: bold; /* Membuat teks tebal */
+}
+
+/* Mengubah warna latar belakang tombol ketika tombol ditekan */
+.custom-button:active {
+  background-color: #4285f4;
+  color: white;
+}

@@ -1,0 +1,92 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Selamat Datang</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">saya mencari teman siapa yang mau berteman dengan saya </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="text-center">Search</ion-title>
+    </ion-toolbar>
+
+    <!-- GRID -->
+    <ion-grid>
+      <ion-row>
+        <ion-searchbar class="searchbar" animated="true" placeholder="Find Friends"></ion-searchbar>
+      </ion-row>
+    </ion-grid>
+  </ion-header>
+  <ion-content class="content">
+
+    <!-- LIST, IMAGE, BUTTON, TOAST -->
+    <ion-list>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/imel.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Imel</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="success" style="text-transform: none;">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="1500" [buttons]="toastButton"
+        message="Imel Apriana"></ion-toast>
+        </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/imell.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Bila</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="primary" style="text-transform: none;">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="1500" [buttons]="toastButton"
+          message="Bila Sipa Safitri"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/Pita.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Pita</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="success" style="text-transform: none;">Accept</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="1500" [buttons]="toastButton"
+          message="Ningsih Puspita"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/Tini.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Tini</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="primary" style="text-transform: none;">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="1500" [buttons]="toastButton"
+          message="Tini Rahayu"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/Ratih.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>Ratih</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="success" style="text-transform: none;">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="1500" [buttons]="toastButton"
+          message="Ratih Novia"></ion-toast>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</div>
